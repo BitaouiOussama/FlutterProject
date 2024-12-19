@@ -12,8 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        '/':(context)=>RegisterForm(),
-        '/signin':(context)=>SignIn(),
+        '/register':(context)=>SignupPage(),
+        '/':(context)=>LoginPage(),
+        
       },
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
