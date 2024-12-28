@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:test_project/myHome.dart';
-import 'package:test_project/registerForm.dart';
-import 'package:test_project/signIn.dart';
+import 'package:test_project/pages/classification/classification.dart';
+import 'package:test_project/pages/home/MyHomePage.dart';
+import 'package:test_project/pages/login/signIn.dart';
+import 'package:test_project/pages/register/registerForm.dart';
+
+import 'package:test_project/pages/models/vocalAssistant.dart';
 
 
 class MyApp extends StatelessWidget {
@@ -14,7 +17,11 @@ class MyApp extends StatelessWidget {
       routes: {
         '/register':(context)=>SignupPage(),
         '/':(context)=>LoginPage(),
-        
+        '/home':(context)=>MyHomePage(title: "home"),
+        '/vocal':(context)=>VocalAssistant(),
+        '/cnn': (context) => ImageClassificationPage()
+       
+
       },
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
